@@ -17,3 +17,6 @@ def cursos(self):
     curso.save()
     documento = f'Curso: {curso.nombre} camada: {curso.camada}'
     return HttpResponse(documento)
+
+def inicio(request):
+    return HttpResponse('HOLA')
